@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taski-Fy</title>
+    <link rel="icon" type="image.webp" href="logo.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Taski-Fy</h1>
+  <div class="container">
+    <!-- Progress -->
+    <div class="section" id="progress">
+      <div class="section-header progress">In-Progress</div>
+      <div class="task-list" id="progress-list"></div>
+      <div class="add-task-box">
+        <button onclick=" showInput('progress')">+ Add Task</button>
+        <div class="input-area" id="progress-input"></div>
+      </div>
+    </div>
+
+    <!-- Complete -->
+    <div class="section" id="complete">
+      <div class="section-header complete">Complete</div>
+      <div class="task-list" id="complete-list"></div>
+      <div class="add-task-box">
+        <button onclick=" showInput('complete')">+ Add Task</button>
+        <div class="input-area" id="complete-input"></div>
+      </div>
+    </div>
+
+    <!-- Pending -->
+    <div class="section" id="pending">
+      <div class="section-header pending">Pending</div>
+      <div class="task-list" id="pending-list"></div>
+      <div class="add-task-box">
+        <button onclick=" showInput('pending')">+ Add Task</button>
+        <div class="input-area" id="pending-input"></div>
+      </div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <p>Copyright@Taski-Fy,2025.Inc</p>
+            <p>Aparup Banerjee</p>
+        </div>
+
+        <div class="footer-logo">
+            <img src="logo.webp" alt="Logo" />
+        </div>
+
+        <div class="footer-right">
+            <p><a href="#">Privacy and Terms</a></p>
+        </div>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+  background: url('bg.webp') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.section {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 15px;
+  width: 30%;
+}
+
+.section-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.progress {
+  background-color: #17a2b8;
+}
+
+.complete {
+  background-color: #28a745;
+}
+
+.pending {
+  background-color: #dc3545;
+}
+
+.task-list .task {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-task-box {
+  margin-top: 15px;
+}
+
+.input-area {
+  margin-top: 10px;
+}
+
+.input-area input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+}
+
+.input-area button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: transparent; /* Removed black background */
+  color: white;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.footer-logo img {
+  height: 100px;
+  object-fit: contain;
+  margin-left: -10px; /* Shift a bit left under "Taski-Fy" */
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
